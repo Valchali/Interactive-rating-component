@@ -11,15 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" defer></script>
   <link rel="html" href="./desktop.html">
   
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
  <main>
@@ -30,14 +31,16 @@
   <p>Please let us know how we did with your support<br> request. All feedback is appreciated 
     to help us<br> improve our offering!</p>
     <div class="buttons">
-  <div class="bnt1"><button>1</button></div>
-  <div class="bnt2"><button>2</button></div>
-  <div class="bnt3"><button>3</button></div>
-  <div class="bnt4"><button>4</button></div>
-  <div class="bnt5"><button>5</button></div>
-  </div>
-
- <a href="./desktop.html"><button class="summit">Summit</button></a>
+      <div class="bnt1"><button onclick="selectRating(1)">1</button></div>
+      <div class="bnt2"><button onclick="selectRating(2)">2</button></div>
+      <div class="bnt3"><button onclick="selectRating(3)">3</button></div>
+      <div class="bnt4"><button onclick="selectRating(4)">4</button></div>
+      <div class="bnt5"><button onclick="selectRating(5)">5</button></div>
+    </div>
+    
+    <!-- Submit button with an onclick event to submit the rating -->
+    <button class="summit" onclick="submitRating()">Submit</button>
+    
 
 
 
